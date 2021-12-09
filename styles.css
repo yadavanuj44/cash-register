@@ -1,6 +1,124 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     width: 50vw;
+    margin: auto;
+    text-align: center;
+    border:2px solid green;
+    padding: 1rem;
+    background: #ADEFD1FF;
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
 
+.container-footer {
+    display: block;
+    margin: 0rem;
+    text-align: center;
+    border:2px solid green;
+    padding: 1rem;
+    background: #ADEFD1FF;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+body {
+    color: black;
+    background-color: #00203FFF;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.description {
+    font-size: large;
+}
+
+.sub-heading {
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: larger;
+    letter-spacing: 0.5px;
+}
+
+.input {
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 2rem;
+    border-width: 0.2px;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: larger;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    border-width: 0rem;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+#error-message {
+    color: #991B1B;
+}
+
+.table-caption {
+    padding: 0.8rem;
+    font-weight: bold;
+    font-size: larger;
+}
+
+table, th, td {
+    border: 2px solid black;
+    padding: 4.5px;
+    border-collapse: collapse;
+    font-weight:200;
+  }
+
+  th {
+      font-weight: bold;
+  }
+  
+  table {
+      margin-bottom: 1rem;
+  }
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.icon {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+.footer{
+    background-color: var(--primary-color);
+    padding: 1rem 0rem 0rem 0rem;
+    text-align: center;
+    color: var(--inside-header-footer);
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    margin-top: 1rem;
+}
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+.footer .link{
+    color: var(--inside-header-footer);
+}
+
+.footer ul{
+    padding-inline-start:0px;
+}
