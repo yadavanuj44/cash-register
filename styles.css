@@ -51,16 +51,19 @@ body {
     font-weight: bold;
     font-size: larger;
     padding: 0.3rem;
-    margin: 0.5rem;
+    margin: 0.5rem auto;
     background-color: transparent;
     border-radius: 2rem;
     border-width: 0rem;
     border: 2px solid;
     cursor: pointer;
+    width: 10rem;
+    background-color: #00203FFF;
+    color: white;
 }
 
 #error-message {
-    color: #991B1B;
+    color: red;
 }
 
 .table-caption {

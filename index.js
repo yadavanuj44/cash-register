@@ -10,18 +10,24 @@ checkButton.addEventListener("click", function validateBillandCashAmount() {
     message.style.display = "none";
     var billIntAmount = parseInt(billAmount.value);
     var amountIntGiven = parseInt(amountGiven.value);
-    if (billIntAmount > 0) {
-        console.log("amountGiven.value ", amountGiven.value);
-        console.log("billAmount.value ", billAmount.value);
-        if (amountIntGiven >= billIntAmount) {
-            const amountToBeGiven = amountIntGiven - billIntAmount;
-            calculateChangeToBeGiven(amountToBeGiven);
-        } else {
-            showMessage("Do you want to wash plates 🍽️ to pay the money?");
-        }
-
+    if (isNaN(billAmount.value)) {
+        showMessage("Enter a number for bill amount");
     } else {
-        showMessage("The bill amount should be greater than 0");
+        if (billIntAmount > 0) {
+            if (isNaN(amountGiven.value)) {
+                showMessage("Enter a number for paid amount");
+            } else {
+                if (amountIntGiven >= billIntAmount) {
+                    const amountToBeGiven = amountIntGiven - billIntAmount;
+                    calculateChangeToBeGiven(amountToBeGiven);
+                } else {
+                    showMessage("Do you want to wash plates 🍽️ to pay the money?");
+                }
+            }
+
+        } else {
+            showMessage("The bill amount should be greater than 0");
+        }
     }
 });
 
